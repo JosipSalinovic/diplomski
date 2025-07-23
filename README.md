@@ -1,2 +1,2 @@
 # diplomski
-animacije zračenja dipola
+animacije zračenja dipola i fitanje signala
