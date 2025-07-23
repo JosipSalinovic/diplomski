@@ -1,2 +1,2 @@
 # diplomski
-ankmacije zračenja dipola
+animacije zračenja dipola
