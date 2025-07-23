@@ -1,0 +1,2 @@
+# diplomski
+simulacije zračenja dipola
