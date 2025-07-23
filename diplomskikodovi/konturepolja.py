@@ -6,8 +6,8 @@ plt.rcParams.update({'font.size': 13})
 
 
 
-#theta = np.arccos(Z / (R + 1e-12))  # avoid division by zero
-# Electric field in theta direction (magnitude)
+#theta = np.arccos(Z / (R + 1e-12))  
+# Electricno polje u y i z smjeru (magnitude) za dipol na 300MHz
 
 pi = np.pi
 j = 1j  # imaginary unit
