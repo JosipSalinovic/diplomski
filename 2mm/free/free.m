@@ -1,4 +1,4 @@
-% Load the first impedance data file
+% Load impedancije suzane
 data1 = load('imp_real_suz.txt');
 
 data2 = load('imp_imag_suz.txt');
@@ -11,17 +11,17 @@ data3 = load('refl_nec.txt');
 y = data3(:, 2);
 
 
-% Reference impedance
+% Refentna impedancija kabela
 Z0 = 50.0;
 
-% Compute reflection coefficients
+% koeficijent refleksije
 Gamma = (Z1 - Z0) ./ (Z1 + Z0);
 Gamma_dB = 20 * log10(abs(Gamma));
 
-% Plot both datasets on the same Smith chart
+% Skoth chart
 
 
-% Plot first dataset (e.g., blue)
+% Plot 
 plot(freq1,Gamma_dB, 'b-');
 
 hold on;
