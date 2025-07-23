@@ -1,37 +1,37 @@
 
-% Load the first impedance data file
+% Load impedanciju experiment
 data1 = load('D900_V.txt');
-                          % Frequency in GHz (optional use)
-Z1 = data1(:, 7) + 1j * data1(:, 9);          % Complex impedance
+                          
+Z1 = data1(:, 7) + 1j * data1(:, 9);         
 
-% Load the second impedance data file
+% Load imp. suzane
 data2 = load('realsuzv.txt');
                       
 data3 = load('imagsuz.txt');
-freq3 = data2(:, 1);                          % Frequency in GHz (optional use)
-Z2 = data2(:, 2) + 1j * data3(:, 2);          % Complex impedance
+freq3 = data2(:, 1);                         
+Z2 = data2(:, 2) + 1j * data3(:, 2);          
 
 data4 = load('realnec.txt');
                       
 data5 = load('imagnec.txt');
-freq5 = data4(:, 1);                          % Frequency in GHz (optional use)
+freq5 = data4(:, 1);                          
 Z3 = data4(:, 2) + 1j * data5(:, 2);  
 
 
 
-% Reference impedance
+% Referentna impedancija
 Z0 = 50.0;
 
-% Compute reflection coefficients
+% refleksija coef
 Gamma1 = (Z1 - Z0)./(Z1 + Z0);
 Gamma2 = (Z2 - Z0)./(Z2 + Z0);
 Gamma3 = (Z3 - Z0)./(Z3 + Z0);
 
 
-% Plot both datasets on the same Smith chart
+% Smith chart
 
 
-% Plot first dataset (e.g., blue)
+
 s=smithplot(Gamma1,'LineStyle','-','Color','g','LineWidth',2)
 hold on
 s=smithplot(Gamma2,'LineStyle','-','Color','r','LineWidth',2)
