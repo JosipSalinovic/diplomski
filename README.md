@@ -1,2 +1,5 @@
-# diplomski
-animacije zračenja dipola i fitanje signala
+# Simulation of half wave dipole antenna
+## Diplomski rad/Master thesis:
+[Link](https://repozitorij.pmfst.unist.hr/islandora/object/pmfst:2099)
+
+In this paper, we consider the half-wave dipole antenna, which is the simplest and most well-known antenna in today’s electrical engineering. In the first chapter of the paper, we introduce you to the theory of electrodynamics and present Maxwell’s four laws that, together with the Lorentz force law, describe all electromagnetic phenomena in nature. In the second chapter, we derive the magnetic vector potential for thin wire antenna and present the theoretical derivation of the electric and magnetic fields in the far and near region and input impedance of a half-wave dipole. In the third part, we introduce you to the Pocklington integral-differential equation, which we will solve numerically using the boundary element method in order to obtain the antenna currents, radiation pattern and input impedance. In the fourth chapter, we will compare the simulation results of the numerical boundary element method with the public open access app 4NEC2, which uses the method of moments. Lastly, we will compare experimental results of input impedance measurements and simulations for a thin wire half-wave dipole antenna near conducting planes
